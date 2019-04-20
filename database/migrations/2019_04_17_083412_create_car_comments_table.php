@@ -17,7 +17,7 @@ class CreateCarCommentsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('cID')->unsigned();
             $table->string('txt');
-            $table->timestamps('date');
+            $table->date('date');
 
             $table->foreign('cID')
             ->references('id')

@@ -14,7 +14,7 @@ class CreateCarsTable extends Migration
     public function up()
     {
         Schema::create('cars', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->integer('mrID')->unsigned();
             $table->integer('mdID')->unsigned();
             $table->integer('cnt')->unsigned();
@@ -37,8 +37,8 @@ class CreateCarsTable extends Migration
             $table->integer('Look');
             $table->enum('rate',['1','2','3','4','5']);
             $table->boolean('act'); 
-            $table->timestamps('date');
-            $table->timestamps('dateA');    
+            $table->date('date');
+            $table->date('dateA');    
             $table->string('ch');  
 
         });

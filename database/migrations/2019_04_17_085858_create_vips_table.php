@@ -16,7 +16,7 @@ class CreateVipsTable extends Migration
         Schema::create('vips', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('cID')->unsigned();
-            $table->timestamps('date');
+            $table->date('date');
 
             $table->foreign('cID')
             ->references('id')

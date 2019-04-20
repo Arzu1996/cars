@@ -26,7 +26,7 @@ class CreateOwnerOfCarsTable extends Migration
             $table->binary('vd1');
             $table->binary('vd2');
             $table->integer('rate');
-            $table->timestamps('date');
+            $table->date('date');
             $table->string('oh');
 
         });
