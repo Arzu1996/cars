@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+Route::get('/contacts', function () {
+    return view('contacts');
+});
+// Route::resource('cars', 'CarController');
